@@ -1,0 +1,9 @@
+version: '3'
+services:
+  editor:
+    image: thecodingmachine/php:7.4-v3-apache-node12
+    container_name: editor
+    ports:
+      - "9000:80"
+    volumes:
+      - .:/var/www/html
